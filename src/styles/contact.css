@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(../../font/Helvetica-Bold.ttf);
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Helvetica", sans-serif;
+  color: #1e1953;
+  background-image: linear-gradient(to right bottom, #75c9b7, #7fcdb0, #8cd1a8, #9bd4a1, #abd699);
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffe26a;
+}
+
+.text p {
+  padding: 1rem 0 0 0;
+}
+.text p:nth-of-type(1) {
+  font-size: 3rem;
+}
+.text p:nth-of-type(2) {
+  font-size: 2rem;
+}
+.text p:nth-of-type(3) {
+  font-size: 1.5rem;
+}
+
+form {
+  width: 60%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+form input:focus,
+form textarea:focus {
+  outline-color: #ffe26a;
+}
+form .input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+form .input label {
+  padding: 1rem 0 0 0;
+  font-size: 1.5rem;
+}
+form .input input,
+form .input textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid #1e1953;
+}
+form button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: #ffe26a;
+  background-color: #1e1953;
+  border-radius: 1rem;
+  border: none;
+}
+form button:hover {
+  box-shadow: 0px 0px 32px 5px rgba(0, 0, 0, 0.71);
+}/*# sourceMappingURL=contact.css.map */

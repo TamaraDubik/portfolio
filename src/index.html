@@ -8,38 +8,43 @@
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="./images/td.png" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.scss" />
     <title>Tamara Dubik</title>
   </head>
   <body>
-    <!-- HEADER START -->
+    <!-- HEADER -->
     <header>
       <nav>
-        <div class="logo">
-          T<span>A</span><span>M</span><span>A</span><span>R</span
-          ><span>A</span>D<span>U</span><span>B</span><span>I</span
-          ><span>K</span>
-        </div>
-        <div class="menu">
-          <input type="checkbox" id="menu" />
-          <label for="menu"><i class="fa-solid fa-xmark"></i></label>
-          <label for="menu"><i class="fa-solid fa-bars"></i></label>
-          <div class="menu-content">
-            <ul>
-              <li><a href="#">About me</a></li>
-              <li><a href="#">My projects</a></li>
-              <li><a href="#">Contacts</a></li>
-            </ul>
-          </div>
+        <!-- LOGO -->
+        <div class="logo">T<span>AMARA</span>D<span>UBIK</span></div>
+
+        <!-- MENU -->
+        <div class="droplist">
+          <h3>Menu</h3>
+          <!-- LIST -->
+
+          <ul class="dropdown">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#info">About me</a>
+            </li>
+            <li>
+              <a href="#">My projects</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
 
     <!-- PICTURE START -->
     <div class="main-pic">
-      <div class="portrait">
-        <a href="#"><img src="./images/pot (1).jpg" alt="" /></a>
-      </div>
+      <a href="./contact.html" target="_blank"
+        ><div class="portrait">
+          <img src="./images/pot (1).jpg" alt="" /></div
+      ></a>
     </div>
 
     <!-- ICONS ON THE BACKGROUND -->
@@ -54,7 +59,7 @@
     <!-- MAIN SECTION -->
     <main>
       <!-- START INFO -->
-      <div class="info">
+      <div class="info" id="info">
         <p>Hi,my name is Tamara.</p>
         <p>
           I am 25 years old and i am pretty fresh in web development field. My
@@ -73,64 +78,124 @@
         <div class="projects">
           <div class="project one">
             <picture>
-              <source media="(max-width:766px)" srcset="./images/1.png" />
+              <source media="(max-width:1022px)" srcset="./images/1.png" />
+              <source
+                media="(min-width:1023px)"
+                srcset="./images/1-desktop.png"
+              />
               <img src="./images/1.png" alt="" />
             </picture>
-            <div class="text"><a href="#">Animation</a></div>
+            <div class="text">
+              <a
+                href="https://github.com/FbW22-E10/uib-interactions-lighting-TamaraDubik"
+                target="_blank"
+                >Animation</a
+              >
+            </div>
           </div>
           <div class="project two">
             <picture>
               <source
-                media="(max-width:766px)"
+                media="(max-width:1022px)"
                 srcset="./images/2-mobile.png"
+              />
+              <source
+                media="(min-width:1023px)"
+                srcset="./images/2-tablet.png"
               />
               <img src="./images/2.png" alt="" />
             </picture>
-            <div class="text"><a href="#">Grid Layout</a></div>
+            <div class="text">
+              <a
+                href="https://github.com/FbW22-E10/uib-layout-grid-document-layout-TamaraDubik"
+                target="_blank"
+                >Grid Layout</a
+              >
+            </div>
           </div>
           <div class="project three">
             <picture>
               <source
-                media="(max-width:766px)"
+                media="(max-width:1022px)"
                 srcset="./images/3-mobile.png"
+              />
+              <source
+                media="(min-width:1023px)"
+                srcset="./images/3-tablet.png"
               />
               <img src="./images/3.png" alt="" />
             </picture>
-            <div class="text"><a href="#">Flex Box</a></div>
+            <div class="text">
+              <a
+                href="https://github.com/FbW22-E10/06_12_22_uib-sweety-layout-ex5-TamaraDubik"
+                target="_blank"
+                >Flex Box</a
+              >
+            </div>
           </div>
           <div class="project five">
             <picture>
               <source
-                media="(max-width:766px)"
+                media="(max-width:1022px)"
                 srcset="./images/5-mobile.png"
+              />
+              <source
+                media="(min-width:1023px)"
+                srcset="./images/5-tablet.png"
               />
               <img src="./images/5.png" alt="" />
             </picture>
-            <div class="text"><a href="#">Flex Box</a></div>
+            <div class="text">
+              <a
+                href="https://github.com/FbW22-E10/10_01_2023_uib-framework-sassy-speaker-shop_ex1-TamaraDubik"
+                target="_blank"
+                >Flex Box</a
+              >
+            </div>
           </div>
           <div class="project six">
             <picture>
               <source
-                media="(max-width:766px)"
+                media="(max-width:1022px)"
                 srcset="./images/6-mobile.png"
+              />
+              <source
+                media="(min-width:1023px)"
+                srcset="./images/6-tablet.png"
               />
               <img src="./images/6.png" alt="" />
             </picture>
-            <div class="text"><a href="#">Bootstrap</a></div>
+            <div class="text">
+              <a
+                href="https://github.com/FbW22-E10/10_01_2023_uib_framework_bootstrap_benny-s-burgers_ex2-TamaraDubik"
+                target="_blank"
+                >Bootstrap</a
+              >
+            </div>
           </div>
           <div class="project four">
             <picture>
               <source
-                media="(max-width:766px)"
+                media="(max-width:1022px)"
                 srcset="./images/4-mobile.png"
+              />
+              <source
+                media="(min-width:1023px)"
+                srcset="./images/4-tablet.png"
               />
               <img src="./images/4.png" alt="" />
             </picture>
-            <div class="text"><a href="#">Keyframes</a></div>
+            <div class="text">
+              <a
+                href="https://github.com/TamaraDubik/animated-card-setup"
+                target="_blank"
+                >Keyframes</a
+              >
+            </div>
           </div>
         </div>
         <div class="more">
-          <a href="https://github.com/TamaraDubik">View More</a>
+          <a href="https://github.com/TamaraDubik" target="_blank">View More</a>
         </div>
       </section>
     </main>
@@ -139,16 +204,28 @@
     <!-- CONTACT -->
     <section class="start">
       <div>
-        <a href="#">Start a project with me!</a>
+        <a href="./contact.html" target="_blank">Start a project with me!</a>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
       <ul>
-        <li><i class="fa-solid fa-at"></i></li>
-        <li><i class="fa-brands fa-github"></i></li>
-        <li><i class="fa-brands fa-linkedin-in"></i></li>
+        <li>
+          <a href="mailto:tamaradubik@gmail.com? subject=Project request"
+            ><i class="fa-solid fa-at"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/TamaraDubik" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
       </ul>
     </footer>
   </body>

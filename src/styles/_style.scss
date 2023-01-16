@@ -12,6 +12,7 @@ a {
   text-decoration: none;
 }
 
+//HEADER
 header {
   height: 30vw;
   background-image: linear-gradient(to right bottom, #abd699, #9bd4a1, #8cd1a8, #7fcdb0, #75c9b7);
@@ -19,8 +20,6 @@ header {
   padding: 0 1rem;
 
   nav {
-    padding: 0 0.5rem;
-
     .logo {
       font-weight: 900;
       font-size: 5.5rem;
@@ -28,44 +27,7 @@ header {
     }
 
     // RIGHT MENU
-    .menu {
-      label {
-        font-size: 4rem;
-        padding: 0 0 0 20rem;
-        cursor: pointer;
-
-        .fa-bars {
-          font-size: 5.5rem;
-          transition: opacity 0.3s, transform 0.3s;
-          display: block;
-        }
-
-        .fa-xmark {
-          font-size: 5.5rem;
-          transition: opacity 0.3s, transform 0.3s;
-          transform: rotate(-180deg) scale(0.5);
-          opacity: 0;
-          display: none;
-        }
-      }
-      // RIGHT MENU
-      ul {
-        list-style: none;
-        font-size: 2rem;
-        border-radius: 2rem;
-        padding: 1rem;
-
-        a {
-          color: $Navy;
-          transition-duration: 0.5s;
-          padding: 0.2rem;
-        }
-
-        a:hover {
-          text-shadow: 2px 1px 18px rgba(0, 0, 0, 0.61);
-        }
-      }
-    }
+  
   }
 }
 
@@ -93,9 +55,11 @@ header {
   color: #fef9db;
   font-size: 4rem;
 
-  .fa-solid:hover {
+  .fa-solid {
+    &:hover {
     transform: rotate(360deg);
     transition: all 1s linear;
+  }
   }
 }
 
@@ -104,6 +68,7 @@ main {
   background-color: $Mint;
   padding-top: 8rem;
 
+  //TEXT
   .info {
     text-align: center;
     font-size: 16px;
@@ -121,6 +86,7 @@ main {
     font-size: 21px;
   }
 
+  //VIEW MORE
   .more {
     text-align: center;
     padding: 1rem 0 4rem 0;
@@ -131,15 +97,22 @@ main {
     }
   }
 
+  //CARDS SECTION
   .projects {
     .text {
       background-color: rgb(0, 0, 0, 0.7);
       padding: 9.5rem 13rem;
       clip-path: circle(0% at 52% 51%);
       transition: 0.8s;
+
+      a {
+        color: $Fresh-Lemon;
+        // font-size: 2rem;
+      }
     }
     .project:hover .text {
       clip-path: circle(73.2% at 52% 51%);
+      color: $Fresh-Lemon;
     }
   }
 }
@@ -162,6 +135,7 @@ main {
   }
 }
 
+//FOOTER
 footer {
   background-image: linear-gradient(to right bottom, #abd699, #9bd4a1, #8cd1a8, #7fcdb0, #75c9b7);
   color: white;
@@ -170,6 +144,53 @@ footer {
   ul {
     font-size: 21px;
     list-style: none;
-    color: $Fresh-Lemon;
+
+    a {
+      color: $Fresh-Lemon;
+    }
+  }
+}
+
+@media (min-width: 1023px) {
+  main {
+    padding-top: 18rem;
+
+    .info {
+      font-size: 21px;
+      max-width: 80%;
+      margin: 2rem auto;
+      p:nth-of-type(1) {
+        font-size: 41px;
+      }
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    .projects {
+      .text {
+        background-color: rgb(0, 0, 0, 0.7);
+        padding: 14.5rem 18rem;
+        clip-path: circle(0% at 52% 51%);
+        transition: 0.8s;
+      }
+      .project:hover .text {
+        clip-path: circle(73.2% at 52% 51%);
+      }
+    }
+  }
+
+  footer {
+    padding: 6rem 0 2rem 0;
+    ul {
+      font-size: 26px;
+    }
+  }
+
+  .main-pic {
+    .portrait:hover::after {
+      font-size: 3rem;
+    }
   }
 }

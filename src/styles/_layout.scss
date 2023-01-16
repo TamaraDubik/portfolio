@@ -2,7 +2,6 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
-        align-items: center;
 
         .logo {
             span {
@@ -10,42 +9,15 @@ header {
             }
         }
 
-        // RIGHT MENU
-        .menu {
-            a {
-                display: block;
-            }
+        .droplist {
+            display: relative;
 
-            label {
-                display: block;
-
-                .fa-xmark {
-                    position: absolute;
-                    right: 21;
-                }
-            }
-
-            input {
-                display: none;
-            }
-
-            .menu-content {
-                display: none;
-                overflow: hidden;
+            .dropdown {
+                //display:none;
                 position: absolute;
-                right: 1;
-            }
-
-            input:checked ~ .menu-content {
-                display: block;
-            }
-
-            input:checked ~ .fa-bars {
-                display: none;
-            }
-
-            input:checked ~ .fa-xmark {
-                display: block;
+                width: 5rem;
+                background-color: mediumpurple;
+               right: 10;
             }
         }
     }
@@ -71,7 +43,7 @@ header {
 
 .icons {
     position: relative;
-
+    font-size: 4rem;
     .fa-solid {
         position: absolute;
     }
@@ -91,7 +63,6 @@ header {
     .fa-keyboard {
         bottom: -200;
         left: 180;
-        // z-index: -1;
     }
 
     .fa-server {
@@ -115,6 +86,9 @@ main {
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 2rem;
 
         .project {
             flex: 1;
@@ -156,16 +130,84 @@ footer {
 }
 
 @media (min-width: 768px) {
+    main {
+        .info {
+            margin-top: 3rem;
+        }
+    }
+
+    .icons {
+        font-size: 4.5rem;
+        .fa-desktop {
+            top: 120;
+            left: 30;
+        }
+
+        .fa-computer-mouse {
+            right: 200;
+            top: 100;
+        }
+
+        .fa-keyboard {
+            bottom: -250;
+            left: 280;
+        }
+
+        .fa-server {
+            bottom: -280;
+            right: 120;
+        }
+
+        .fa-laptop {
+            bottom: -330;
+            left: 200;
+        }
+    }
 }
 
-@media (min-width: 1022px) {
+@media (min-width: 1023px) {
     header {
         nav {
             .logo {
                 span {
                     display: inline;
+                    margin-right: 2rem;
                 }
             }
+
+            .menu {
+                a {
+                    display: block;
+                }
+
+                label {
+                    display: block;
+
+                    .fa-xmark {
+                        position: absolute;
+                        right: 21;
+                    }
+                }
+
+                .menu-content {
+                    display: none;
+                    overflow: hidden;
+                    position: absolute;
+                    right: 1;
+                }
+            }
+        }
+    }
+
+    .icons {
+        .fa-solid {
+            display: none;
+        }
+    }
+
+    main {
+        .projects {
+            padding: 3rem;
         }
     }
 }
