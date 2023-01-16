@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url(../../font/Helvetica-Bold.ttf);
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  color: $Navy;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 30vw;
+  background-image: linear-gradient(to right bottom, #abd699, #9bd4a1, #8cd1a8, #7fcdb0, #75c9b7);
+  color: white;
+  padding: 0 1rem;
+
+  nav {
+    padding: 0 0.5rem;
+
+    .logo {
+      font-weight: 900;
+      font-size: 5.5rem;
+      text-shadow: 4px 3px 0px #7a7a7a;
+    }
+
+    // RIGHT MENU
+    .menu {
+      label {
+        font-size: 4rem;
+        padding: 0 0 0 20rem;
+        cursor: pointer;
+
+        .fa-bars {
+          font-size: 5.5rem;
+          transition: opacity 0.3s, transform 0.3s;
+          display: block;
+        }
+
+        .fa-xmark {
+          font-size: 5.5rem;
+          transition: opacity 0.3s, transform 0.3s;
+          transform: rotate(-180deg) scale(0.5);
+          opacity: 0;
+          display: none;
+        }
+      }
+      // RIGHT MENU
+      ul {
+        list-style: none;
+        font-size: 2rem;
+        border-radius: 2rem;
+        padding: 1rem;
+
+        a {
+          color: $Navy;
+          transition-duration: 0.5s;
+          padding: 0.2rem;
+        }
+
+        a:hover {
+          text-shadow: 2px 1px 18px rgba(0, 0, 0, 0.61);
+        }
+      }
+    }
+  }
+}
+
+// PICTURE
+.main-pic {
+  img {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+  }
+
+  .portrait:hover::after {
+    content: "Contact me!";
+    background-color: rgb(0, 0, 0, 0.7);
+    line-height: 30vw;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    color: $Mint;
+    font-size: 1rem;
+  }
+}
+
+.icons {
+  color: #fef9db;
+  font-size: 4rem;
+
+  .fa-solid:hover {
+    transform: rotate(360deg);
+    transition: all 1s linear;
+  }
+}
+
+// MAIN
+main {
+  background-color: $Mint;
+  padding-top: 8rem;
+
+  .info {
+    text-align: center;
+    font-size: 16px;
+    padding: 5%;
+    z-index: 5;
+    position: relative;
+
+    p:nth-of-type(1) {
+      font-size: 21px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .more {
+    text-align: center;
+    padding: 1rem 0 4rem 0;
+    font-size: 18px;
+
+    a {
+      color: $Navy;
+    }
+  }
+
+  .projects {
+    .text {
+      background-color: rgb(0, 0, 0, 0.7);
+      padding: 9.5rem 13rem;
+      clip-path: circle(0% at 52% 51%);
+      transition: 0.8s;
+    }
+    .project:hover .text {
+      clip-path: circle(73.2% at 52% 51%);
+    }
+  }
+}
+
+// CONTACT
+.start {
+  width: 100%;
+
+  div {
+    text-align: center;
+    background-color: $Navy;
+    width: 90%;
+    padding: 2rem;
+    border-radius: 2rem;
+
+    a {
+      font-size: 18px;
+      color: $Teal;
+    }
+  }
+}
+
+footer {
+  background-image: linear-gradient(to right bottom, #abd699, #9bd4a1, #8cd1a8, #7fcdb0, #75c9b7);
+  color: white;
+  padding: 5rem 0 2rem 0;
+
+  ul {
+    font-size: 21px;
+    list-style: none;
+    color: $Fresh-Lemon;
+  }
+}

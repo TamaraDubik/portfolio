@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url(../../font/Helvetica-Bold.ttf);
+}
+@font-face {
+  font-family: "Anton";
+  src: url(../../font/Anton-Regular.ttf);
+}
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+.logo {
+  font-family: "Anton";
+  font-weight: 900;
+  font-size: 8rem;
+  color: rebeccapurple;
+}
+
+h1 {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

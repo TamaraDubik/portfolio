@@ -1,0 +1,171 @@
+header {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            span {
+                display: none;
+            }
+        }
+
+        // RIGHT MENU
+        .menu {
+            a {
+                display: block;
+            }
+
+            label {
+                display: block;
+
+                .fa-xmark {
+                    position: absolute;
+                    right: 21;
+                }
+            }
+
+            input {
+                display: none;
+            }
+
+            .menu-content {
+                display: none;
+                overflow: hidden;
+                position: absolute;
+                right: 1;
+            }
+
+            input:checked ~ .menu-content {
+                display: block;
+            }
+
+            input:checked ~ .fa-bars {
+                display: none;
+            }
+
+            input:checked ~ .fa-xmark {
+                display: block;
+            }
+        }
+    }
+}
+
+// PICTURE
+.main-pic {
+    text-align: center;
+
+    img {
+        position: absolute;
+        top: 30vw;
+        transform: translate(-50%, -50%);
+    }
+
+    .portrait:hover::after {
+        position: absolute;
+        top: 15vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.icons {
+    position: relative;
+
+    .fa-solid {
+        position: absolute;
+    }
+
+    .fa-desktop {
+        top: 80;
+        left: 15;
+        transform: rotate(16deg);
+    }
+
+    .fa-computer-mouse {
+        right: 40;
+        top: 50;
+        transform: rotate(-30deg);
+    }
+
+    .fa-keyboard {
+        bottom: -200;
+        left: 180;
+        // z-index: -1;
+    }
+
+    .fa-server {
+        bottom: -280;
+        right: 20;
+        transform: rotate(-12deg);
+    }
+
+    .fa-laptop {
+        bottom: -330;
+        left: 100;
+        transform: rotate(12deg);
+    }
+}
+
+// MAIN
+main {
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        .project {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin: 0 1rem;
+            position: relative;
+            text-align: center;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+// CONTACT
+.start {
+    position: relative;
+
+    div {
+        position: absolute;
+        top: -35;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+//FOOTER
+footer {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1022px) {
+    header {
+        nav {
+            .logo {
+                span {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
