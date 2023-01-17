@@ -4,10 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="./styles/contact.scss"> 
+    <script
+      src="https://kit.fontawesome.com/3ab076fd93.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/contact.scss" />
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <!-- MENU -->
+        <div class="droplist">
+          <h3><i class="fa-solid fa-bars"></i></h3>
+          <!-- LIST -->
+
+          <ul class="dropdown">
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <form action="">
       <div class="text">
         <p>Get in touch.</p>
@@ -31,7 +48,13 @@
       </div>
       <div class="input">
         <label for="message">Message:</label>
-        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          required
+        ></textarea>
       </div>
       <button type="submit">Send</button>
     </form>

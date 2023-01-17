@@ -23,6 +23,42 @@ a {
     color: #ffe26a;
 }
 
+header {
+    color: white;
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .droplist {
+            display: relative;
+
+            h3 {
+                font-size: 3rem;
+                text-shadow: 4px 3px 0px #7a7a7a;
+            }
+
+            .dropdown {
+                display: none;
+                position: absolute;
+                right: 10;
+                text-align: right;
+                width: 8rem;
+                list-style: none;
+                a {
+                    display: block;
+                    font-size: 1.5rem;
+                    padding: 0.5rem;
+                }
+            }
+        }
+
+        .droplist:hover .dropdown {
+            display: block;
+        }
+    }
+}
+
 .text {
     p {
         padding: 1rem 0 0 0;
@@ -56,7 +92,7 @@ form {
         width: 100%;
         align-items: flex-start;
         gap: 0.5rem;
-        
+
         label {
             padding: 1rem 0 0 0;
             font-size: 1.5rem;
