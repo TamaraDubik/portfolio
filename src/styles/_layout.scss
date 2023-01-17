@@ -2,6 +2,7 @@ header {
     nav {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .logo {
             span {
@@ -13,12 +14,18 @@ header {
             display: relative;
 
             .dropdown {
-                //display:none;
+                display: none;
                 position: absolute;
-                width: 5rem;
-                background-color: mediumpurple;
-               right: 10;
+                right: 10;
+                text-align: right;
+                a {
+                    display: block;
+                }
             }
+        }
+
+        .droplist:hover .dropdown {
+            display: block;
         }
     }
 }
@@ -56,7 +63,7 @@ header {
 
     .fa-computer-mouse {
         right: 40;
-        top: 50;
+        top: 30;
         transform: rotate(-30deg);
     }
 
@@ -98,6 +105,7 @@ main {
             position: relative;
             text-align: center;
         }
+
         .text {
             position: absolute;
             top: 50%;
@@ -145,7 +153,7 @@ footer {
 
         .fa-computer-mouse {
             right: 200;
-            top: 100;
+            top: 70;
         }
 
         .fa-keyboard {

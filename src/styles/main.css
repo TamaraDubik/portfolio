@@ -10925,6 +10925,7 @@ textarea.form-control-lg {
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header nav .logo span {
   display: none;
@@ -10933,10 +10934,16 @@ header nav .droplist {
   display: relative;
 }
 header nav .droplist .dropdown {
+  display: none;
   position: absolute;
-  width: 5rem;
-  background-color: mediumpurple;
   right: 10;
+  text-align: right;
+}
+header nav .droplist .dropdown a {
+  display: block;
+}
+header nav .droplist:hover .dropdown {
+  display: block;
 }
 
 .main-pic {
@@ -10968,7 +10975,7 @@ header nav .droplist .dropdown {
 }
 .icons .fa-computer-mouse {
   right: 40;
-  top: 50;
+  top: 30;
   transform: rotate(-30deg);
 }
 .icons .fa-keyboard {
@@ -11041,7 +11048,7 @@ footer ul {
   }
   .icons .fa-computer-mouse {
     right: 200;
-    top: 100;
+    top: 70;
   }
   .icons .fa-keyboard {
     bottom: -250;
@@ -11118,6 +11125,24 @@ header nav .logo {
   font-size: 5.5rem;
   text-shadow: 4px 3px 0px #7a7a7a;
 }
+header nav .droplist h3, header nav .droplist .h3 {
+  font-size: 3rem;
+  text-shadow: 4px 3px 0px #7a7a7a;
+}
+header nav .droplist .dropdown {
+  width: 8rem;
+  list-style: none;
+}
+header nav .droplist .dropdown a {
+  font-size: 1.5rem;
+}
+header nav .droplist:hover .dropdown {
+  display: block;
+}
+header nav a:hover {
+  text-shadow: -3px 0px 16px rgb(199, 221, 204);
+  color: #ffe26a;
+}
 
 .main-pic img {
   height: 30vw;
@@ -11139,7 +11164,7 @@ header nav .logo {
   color: #fef9db;
   font-size: 4rem;
 }
-.icons .fa-solid:hover {
+.icons .fa-computer-mouse:hover {
   transform: rotate(360deg);
   transition: all 1s linear;
 }
@@ -11172,13 +11197,26 @@ main .more a {
 }
 main .projects .text {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 9.5rem 13rem;
+  padding: 9rem 10.5rem;
   -webkit-clip-path: circle(0% at 52% 51%);
           clip-path: circle(0% at 52% 51%);
   transition: 0.8s;
 }
 main .projects .text a {
   color: #ffe26a;
+  font-size: 2rem;
+}
+main .projects .two a {
+  padding: 3rem;
+}
+main .projects .three a {
+  padding: 1rem;
+}
+main .projects .five a {
+  padding: 1rem;
+}
+main .projects .six a {
+  padding: 0.3rem;
 }
 main .projects .project:hover .text {
   -webkit-clip-path: circle(73.2% at 52% 51%);
@@ -11231,7 +11269,7 @@ footer ul a {
   }
   main .projects .text {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 14.5rem 18rem;
+    padding: 14rem 15.5rem;
     -webkit-clip-path: circle(0% at 52% 51%);
             clip-path: circle(0% at 52% 51%);
     transition: 0.8s;
@@ -11239,6 +11277,18 @@ footer ul a {
   main .projects .project:hover .text {
     -webkit-clip-path: circle(73.2% at 52% 51%);
             clip-path: circle(73.2% at 52% 51%);
+  }
+  main .projects .two a {
+    padding: 3rem;
+  }
+  main .projects .three a {
+    padding: 1.5rem;
+  }
+  main .projects .five a {
+    padding: 1.2rem;
+  }
+  main .projects .four a {
+    padding: 0;
   }
   footer {
     padding: 6rem 0 2rem 0;
